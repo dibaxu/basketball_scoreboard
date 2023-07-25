@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scoreboard</title>
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body class="m-0 bg-slate-200">
+    <main class="container box-border mx-auto mt-5 font-mono bg-blue-900 text-white rounded-xl border-2 border-sky-400">
+        <h1 class="text-center font-bold text-2xl pt-3">Basketball Scoreboard</h1>
+        <div class="container flex justify-center p-5 "> 
+            <div class="container text-center">
+                <h3 class="italic font-bold  text-red-600">HOME</h3>
+                <div class="container bg-black box-content w-14 h-12 mx-auto rounded-md">
+                    <span class="text-red-600 my-auto w-full h-full flex justify-center items-center" id="homeScore">0</span>
+                </div>
+                <div class="mt-2 grid grid-cols-3 divide-x w-max mx-auto">
+                    <button class="bg-orange-700 shadow-inner rounded-l-md hover:shadow-orange-600 opacity-90 hover:opacity-100 w-14" onclick="plus3home()">+3</button>
+                    <button class="bg-orange-700 shadow-inner hover:shadow-orange-600 opacity-90 hover:opacity-100 w-14" onclick="plus2home()">+2</button>
+                    <button class="bg-orange-700 shadow-inner rounded-r-md hover:shadow-orange-600 opacity-90 hover:opacity-100 w-14" onclick="plus1home()">+1</button>
+                </div>
+            </div>
+            <div class="container flex-col justify-center align-middle text-center ">
+                <h3 class="italic font-bold text-red-600">GUEST</h3>
+                <div class="container bg-black box-content w-14 h-12 mx-auto rounded-md">
+                    <span class="text-red-600 my-auto w-full h-full flex justify-center items-center" id="guestScore">0</span>
+                </div>
+                <div class="mt-2 grid grid-cols-3 divide-x w-max mx-auto">
+                    <button class="bg-orange-700 shadow-inner rounded-l-md hover:shadow-orange-600 opacity-90 hover:opacity-100 w-14" onclick="plus3guest()">+3</button>
+                    <button class="bg-orange-700 shadow-inner hover:shadow-orange-600 opacity-90 hover:opacity-100 w-14" onclick="plus2guest()">+2</button>
+                    <button class="bg-orange-700 shadow-inner rounded-r-md hover:shadow-orange-600 opacity-90 hover:opacity-100 w-14" onclick="plus1guest()">+1</button>
+                </div>
+            </div>
+            
+        </div>
+        <button class="flex justify-center mx-auto mb-5 w-24 bg-slate-800 shadow-inner rounded hover:shadow-red-600 opacity-90 hover:opacity-100" onclick="resetScore()">New Game</button>        
+    </main>    
+    <script src="index.js"></script>
+</body>
+</html>
